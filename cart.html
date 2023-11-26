@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Carrito de Compras</title>
+</head>
+<body>
+
+  <header>
+    <h1>Tu Carrito de Compras</h1>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="product.html">Detalles del Producto</a></li>
+        <li><a href="cart.html">Carrito de Compras</a></li>
+      </ul>
+  </nav>
+
+  <main>
+    <section class="cart-items">
+      <!-- Aquí se mostrarían los productos agregados al carrito -->
+      <!-- Ejemplo de un producto en el carrito -->
+      <div class="cart-item">
+        <img src="producto1.jpg" alt="Producto 1">
+        <div class="item-details">
+          <h2>Nombre del Producto 1</h2>
+          <p>Precio: $100</p>
+          <p>Cantidad: 3</p>
+          <button class="remove-item">Eliminar</button>
+        </div>
+      </div>
+
+      <!-- Puedes replicar este bloque para cada producto en el carrito -->
+    </section>
+
+    <section class="cart-summary">
+      <h2>Resumen del Carrito</h2>
+      <p>Total de productos: 3</p>
+      <p>Total a Pagar: $300</p>
+      <a href="checkout.html" class="checkout-button">Ir al Pago</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tienda de Equipos Tecnológicos</p>
+  </footer>
+
+</body>
+</html>
