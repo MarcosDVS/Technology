@@ -17,13 +17,41 @@ body {
   main {
     padding: 2em;
   }
-  
+
   .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
   }
-  
+  .product img {
+    width: 200px;
+    height: 210px;
+    border-radius: 8px;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+}
+
+.product-details img {
+  width: 200px;
+  height: 210px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.details {
+  max-width: 600px;
+}
+
+.details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.details p {
+  margin-bottom: 10px;
+}
   /* Estilos para el menú de navegación */
 
 nav {
@@ -53,42 +81,6 @@ nav {
     border-bottom: 2px solid #fff;
     padding-bottom: 2px;
   }
-
-  .checkout-button { /* Button Pay */
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #005203; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Esquinas redondeadas */
-    cursor: pointer;
-  }
-
-  .remove-item { /* Button Deleted */
-    padding: 8px 16px;
-    font-size: 14px;
-    background-color: #bb1c00; /* Color de fondo (rojo) */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Esquinas redondeadas */
-    cursor: pointer;
-  }
-
-  /* Estilos para el botón "Agregar al Carrito" */
-
-.add-to-cart {
-    padding: 8px 16px;
-    font-size: 14px;
-    background-color: #008CBA; /* Color de fondo (azul) */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Esquinas redondeadas */
-    cursor: pointer;
-  }
-
   /* Estilos para el formulario de pago */
 
 .payment-details {
@@ -123,5 +115,94 @@ button:hover {
   background-color: #005684;
 }
 
-  /* Estilos adicionales según tus preferencias */
+.add-to-cart,
+.checkout-button,
+.remove-item,
+.btn-info {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.add-to-cart {
+    background-color: #008CBA;
+    color: #fff;
+}
+
+.checkout-button {
+    background-color: #005203;
+    color: #fff;
+}
+
+.remove-item {
+    background-color: #bb1c00;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #fff;
+    color: #008CBA;
+    border: 2px solid #008CBA;
+}
+
+.add-to-cart:hover,
+.checkout-button:hover,
+.remove-item:hover,
+.btn-info:hover {
+    background-color: #005684;
+}
+
+.cart-items {
+  flex: 1;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cart-item img {
+  max-width: 100px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.item-details p {
+  margin: 0;
+}
+
+.cart-summary {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cart-summary p {
+  margin: 0;
+}
   
