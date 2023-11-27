@@ -205,4 +205,15 @@ button:hover {
 .cart-summary p {
   margin: 0;
 }
-  
+
+/* Estilos básicos para que se vea como un enlace */
+.link {
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: blue; /* Color del texto del enlace */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}
+
+/* Estilo adicional al pasar el ratón sobre el enlace */
+.link:hover {
+  text-decoration: underline; /* Añade subrayado al pasar sobre el enlace */
+}
