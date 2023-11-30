@@ -47,6 +47,8 @@
         <p class="warranty-text">La garantía no cubre daños ocasionados por el 
             cliente como manchas, rocturas por caidas o daños por aguas.
         </p>
+
+        <button onclick="saveInvoice()" class="save-button">Guardar Factura</button>
     </main>
 
     <footer>
@@ -57,6 +59,14 @@
         function generateInvoice() {
             // Aquí puedes agregar lógica adicional para generar la factura
             alert("Factura generada con éxito");
+        }
+
+        function saveInvoice() {
+            // Lógica para guardar la factura (puedes implementar esto según tus necesidades)
+            alert("Factura guardada con éxito");
+
+            // Redirigir a inicio.html
+            window.location.href = 'inicio.html';
         }
     </script>
 </body>

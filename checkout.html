@@ -36,7 +36,7 @@
         <label for="cvv">CVV:</label>
         <input type="text" id="cvv" name="cvv" required>
 
-        <button type="submit">Pagar</button>
+        <button onclick="seeInvoice()" type="submit">Pagar</button>
       </form>
     </section>
   </main>
@@ -45,5 +45,12 @@
     <p>&copy; 2023 Tienda de Equipos Tecnológicos</p>
   </footer>
 
+  <script>
+    function seeInvoice() {
+
+        // Redirigir a invoice.html
+        window.location.href = 'invoice.html';
+    }
+</script>
 </body>
 </html>
