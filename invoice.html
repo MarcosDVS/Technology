@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Factura de Compras</title>
+</head>
+<body>
+    <header>
+        <h1>Factura de Compras</h1>
+    </header>
+
+    <main>
+        <div class="customer-details">
+                <p for="invoice-date"><b>Fecha:</b> 29/11/2023</p>
+                <p for="customer-name"><b>Cliente:</b> Francisco Belen</p>
+
+        </div>
+
+        <div class="invoice-items">
+            <h2>Artículos Comprados</h2>
+            <div class="cart-item">
+                <img src="img/iphone15.png" alt="Producto 1">
+                <div class="item-details">
+                    <h2>iphone 15 pro max</h2>
+                    <p>Precio: $43,000</p>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="img/lenovo.png" alt="Producto 2">
+                <div class="item-details">
+                    <h2>Lenovo Legion 5</h2>
+                    <p>Precio: $42,699</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Resumen de la Factura</h2>
+            <p><b>Subtotal:</b> $70,273.18</p>
+            <p><b>ITBIS (18%):</b> $15,425.82</p>
+            <p><b>Total:</b> $85,699</p>
+        </div>
+
+        <p class="warranty-text">La garantía no cubre daños ocasionados por el 
+            cliente como manchas, rocturas por caidas o daños por aguas.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tienda de Equipos Tecnológicos</p>
+    </footer>
+
+    <script>
+        function generateInvoice() {
+            // Aquí puedes agregar lógica adicional para generar la factura
+            alert("Factura generada con éxito");
+        }
+    </script>
+</body>
+</html>

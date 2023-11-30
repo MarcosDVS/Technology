@@ -217,3 +217,12 @@ button:hover {
 .link:hover {
   text-decoration: underline; /* Añade subrayado al pasar sobre el enlace */
 }
+
+.warranty-text {
+  font-style: italic;
+  color: #555;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
